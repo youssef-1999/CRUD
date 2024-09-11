@@ -20,6 +20,14 @@ else
 }
 
 function addProduct () {
+     // Check if all inputs are filled
+     if (productName.value.trim() === "" || 
+     productprice.value.trim() === "" || 
+     productcategory.value.trim() === "" || 
+     productDescription.value.trim() === "") {
+     alert("Please fill in all fields before adding a product.");
+     return;
+ }
     if(myBtn.innerHTML=="Add")
     {
 
